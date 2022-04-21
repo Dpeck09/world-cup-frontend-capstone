@@ -1,0 +1,26 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/2
+
+###
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+  "email": "Tscott@gmail.com",
+  "username": "AntSoccer583",
+  "bracket_made": false,
+  "password_digest": "password"
+}
+
+###
+PATCH http://localhost:3000/users/4
+content-type: application/json
+
+{
+  "username": "BendinLikeBeckham10"
+}
+
+###
+DELETE http://localhost:3000/users/3
