@@ -35,3 +35,9 @@ Content-Type: application/json
   "email": "Scottgerald@gmail.com",
   "password_digest": "password"
 }
+
+
+###
+GET https://api.challonge.com/v1/
+Authorization: Bearer lfnFHKeHL47NKzPaaLTVvr1oB3g7wyRkc0XxVlvk
+Content-Type: application/json
