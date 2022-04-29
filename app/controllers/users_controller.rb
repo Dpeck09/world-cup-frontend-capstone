@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :authenticate_user, except: :create
+
  def index
   user = User.all
   render json: user.as_json
@@ -15,11 +17,14 @@ def create
     email: params[:email],
     username: params[:username],
     bracket_made: params[:bracket_made],
-    password_digest: params[:password_digest]
+    password: params[:password],
+    password_confirmation: params[:password_confirmation]
   )
-  user.save
-
-  render json: user.as_json
+  if user.save
+    render json: { message: "User created successfully" }, status: :created
+  else
+    render json: { errors: user.errors.full_messages }, status: :bad_request
+  end
 end
 
 

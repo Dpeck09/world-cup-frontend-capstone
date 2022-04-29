@@ -8,18 +8,20 @@ POST http://localhost:3000/users
 content-type: application/json
 
 {
-  "email": "Tscott@gmail.com",
-  "username": "AntSoccer583",
+  "email": "Scottgerald@gmail.com",
+  "username": "Sgerald231",
   "bracket_made": false,
-  "password_digest": "password"
+  "password": "password",
+  "password_confirmation": "password"
 }
 
 ###
 PATCH http://localhost:3000/users/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2NTEzNDExMzZ9._n2fnjyAUzlseMMd74Gu1PjCEgu22Zz0JIf5vlycG6A
 content-type: application/json
 
 {
-  "username": "BendinLikeBeckham10"
+  "username": "BendinLikeMaria11"
 }
 
 ###
@@ -30,6 +32,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
-  "password": "password"
+  "email": "Scottgerald@gmail.com",
+  "password_digest": "password"
 }
