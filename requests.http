@@ -17,11 +17,11 @@ content-type: application/json
 
 ###
 PATCH http://localhost:3000/users/4
-Authorization: const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE2NTE5NDQ4MTZ9.KMMmpZz3slr_Bhuy7K_M4sZ2VYdthXOCC_8oir5PfuU
 content-type: application/json
 
 {
-  "username": "BendinLikeMaria11"
+  "username": "G-eazy902"
 }
 
 ###
@@ -39,5 +39,13 @@ Content-Type: application/json
 
 ###
 GET https://api.challonge.com/v1/
-Authorization: Bearer lfnFHKeHL47NKzPaaLTVvr1oB3g7wyRkc0XxVlvk
+Authorization: Bearer 
 Content-Type: application/json
+
+
+###
+GET http://localhost:3000/games
+
+###
+
+GET http://localhost:3000/user_games

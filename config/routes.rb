@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   delete "users/:id" => "users#destroy"
 
   post "/sessions" => "sessions#create"
+
+  get "/games" => "games#index"
+
+
+  get "/user_games" => "user_games#index"
 end
