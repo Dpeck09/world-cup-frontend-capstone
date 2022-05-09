@@ -32,15 +32,15 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "Scottgerald@gmail.com",
-  "password_digest": "password"
+  "email": "123@gmail.com",
+  "password": "password"
 }
 
 
 ###
-GET https://api.challonge.com/v1/
-Authorization: Bearer 
-Content-Type: application/json
+# GET https://api.challonge.com/v1/
+# Authorization: Bearer 
+# Content-Type: application/json
 
 
 ###
