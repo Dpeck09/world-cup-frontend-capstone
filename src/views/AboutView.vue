@@ -24,11 +24,15 @@ export default {
   <div class="home">
     <h1>All Games</h1>
     <div v-for="game in games" v-bind:key="game.id">
-      <h2>{{ game.name }}</h2>
-      <img v-bind:src="game.url" v-bind:alt="game.name" />
       <p>Match: {{ game.game_number }}</p>
       <h4>Home: {{ game.home }}</h4>
       <h4>Away: {{ game.away }}</h4>
+      <select v-model="selected">
+      <option selected><h4>{{ game.home }}</h4></option>
+      <option><h4>{{ game.away }}</h4></option>
+      </select>
+      <span>Selected: {{ selected }}</span>
+      <hr>
     </div>
   </div>
 </template>
