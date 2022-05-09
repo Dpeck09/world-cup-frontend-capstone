@@ -3,6 +3,8 @@
     <router-link to="/">Home</router-link> 
     |
     <router-link to="/about">Games</router-link>
+    |
+    <router-link to="/UserGames">Users Games</router-link>
 
 
   </nav>
