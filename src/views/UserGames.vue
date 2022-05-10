@@ -24,10 +24,10 @@ export default {
   <div class="home">
     <h1>All User Picks</h1>
     <div v-for="UserGame in UserGames" v-bind:key="UserGames.id">
-    <p>Match: {{ userGames.game_number }}</p>
-      <p>match: {{ userGames.game_number }}</p>
-      <p>User Pick: {{ userGames.user_pick }}</p>
-      <p>Points: {{ userGames.points_awarded }}</p>
+    <p>Match: {{ UserGames.game_number }}</p>
+      <p>match: {{ UserGames.game_number }}</p>
+      <p>User Pick: {{ UserGames.user_pick }}</p>
+      <p>Points: {{ UserGames.points_awarded }}</p>
     </div>
   </div>
 </template>
