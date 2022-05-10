@@ -1,0 +1,10 @@
+@games.map do |game|
+  {
+    id: game.id,
+    home: game.home,
+    away: game.away,
+    game_number: game.game_number,
+    points: game.points,
+    user_selection: ""
+  }
+end

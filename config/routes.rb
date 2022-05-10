@@ -15,5 +15,7 @@ Rails.application.routes.draw do
   get "/games" => "games#index"
 
 
+  post "/user_games" => "user_games#create"
   get "/user_games" => "user_games#index"
+  get "/user_games/:id" => "user_games#show"
 end
