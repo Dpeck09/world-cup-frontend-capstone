@@ -14,14 +14,15 @@ end
 
 
 def create
-  p params[:user_games][0]["user_selection"]
-  user_game = UserGame.new(
-    game_number: params[:user_games][0]["game_number"], 
-    user_pick: params[:user_games][0]["user_selection"], 
-    user_id: 10, 
-    points_awarded: params[:user_games][0]["points_awarded"], 
-  )
-  user_game.save
+  8.times do |game_number|
+    user_game = UserGame.new(
+      game_number: params[:user_games][game_number]["game_number"], 
+      user_pick: params[:user_games][game_number]["user_selection"], 
+      user_id: current_user.id, 
+      points_awarded: params[:user_games][game_number]["points_awarded"],
+    )
+    user_game.save
+  end
 
   # user_games = UserGame.new(
   #   user_pick: params[:user_pick],
