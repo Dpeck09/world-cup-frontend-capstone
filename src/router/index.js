@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import SignUp from '../views/SignUp.vue'
 import Login from '../views/Login.vue'
 import Logout from "../views/Logout.vue"
-import UserGames from '../views/UserGames.vue';
+import UserAccount from '../views/UserAccount.vue';
 
 
 const routes = [
@@ -28,9 +28,9 @@ const routes = [
     component: Logout
   },
   {
-    path: '/UserGames',
-    name: 'UserGames',
-    component: UserGames
+    path: '/UserAccount',
+    name: 'UserAccount',
+    component: UserAccount
   },
   {
     path: '/about',

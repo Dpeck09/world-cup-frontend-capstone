@@ -1,0 +1,43 @@
+<script>
+ import axios from "axios";
+ export default {
+   data: function () {
+     return {
+       user: {},
+       user_game: {},
+     };
+   },
+   created: function () {
+     axios.get("/users/" + this.$route.params.id + ".json").then((response) => {
+       console.log("users show", response);
+       this.user = response.data;
+     });
+     axios.get("/user_games/" + this.$route.params.id + ".json").then((response) => {
+       console.log("users_games show", response);
+       this.user_games = response.data;
+     });
+   },
+   methods: {
+     
+   },
+ };
+ </script>
+
+ <template>
+  <div class="users-show">
+    <h2>{{ user.username }}</h2>
+
+    <p>{{ user.user_games }}</p>
+    
+    <router-link to="/users">Back to all users</router-link>
+  </div>
+
+
+<div class="user_games-show">
+  <h2>{{ user_games }}</h2>
+  
+  
+</div>
+
+
+ </template>

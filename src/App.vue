@@ -4,7 +4,7 @@
     |
     <router-link to="/about">Games</router-link>
     |
-    <router-link to="/UserGames">Users Games</router-link>
+    <router-link to="/UserAccount">Profile</router-link>
 
 
   </nav>
