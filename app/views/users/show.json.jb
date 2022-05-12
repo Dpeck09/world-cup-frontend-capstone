@@ -2,5 +2,4 @@
   username: @user.username,
   email: @user.email,
   user_games: @user.user_games,
-  updated_at: @user.updated_at
 }

@@ -5,6 +5,7 @@
     away: game.away,
     game_number: game.game_number,
     points: game.points,
-    user_selection: ""
+    user_selection: "",
+    next_round: game.next_round
   }
 end

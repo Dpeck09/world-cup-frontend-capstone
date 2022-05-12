@@ -1,9 +1,11 @@
 class GamesController < ApplicationController
 
   def index
-    @games = Game.all
+    @games = Game.order(:game_number)
     render template: "games/index"
   end
+
+
 
 
 
