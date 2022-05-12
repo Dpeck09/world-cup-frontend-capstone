@@ -13,7 +13,7 @@
        this.user = response.data;
      });
      axios.get("/user_games/" + this.$route.params.id + ".json").then((response) => {
-       console.log("users_games show", response);
+       console.log("user_games show", response);
        this.user_games = response.data;
      });
    },
@@ -27,17 +27,15 @@
   <div class="users-show">
     <h2>{{ user.username }}</h2>
 
-    <p>{{ user.user_games }}</p>
+ 
+ <p v-for="guess in user.user_games">{{ guess.user_pick }}</p>
+
+
     
     <router-link to="/users">Back to all users</router-link>
   </div>
 
 
-<div class="user_games-show">
-  <h2>{{ user_games }}</h2>
-  
-  
-</div>
 
 
  </template>
