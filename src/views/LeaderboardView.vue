@@ -18,7 +18,7 @@
        });
      },
      indexUser_Games: function () {
-       axios.get("/User_games").then((response) => {
+       axios.get("/user_games").then((response) => {
          console.log("User_games index", response);
          this.User_games = response.data;
        });

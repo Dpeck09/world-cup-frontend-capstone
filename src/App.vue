@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/UserAccount">Profile</router-link>
+    <router-link to="/UserAccount">Account</router-link>
     |
     <router-link to="/Guess">Create Bracket</router-link>
     |

@@ -18,11 +18,11 @@ export default {
       });
     },
     submit: function () {
-      // console.log()
+      console.log()
       axios.post("/user_games.json", {user_games: this.games}).then(
         (response) => {
           console.log(response.data);
-          // this.$router.push("/user_games");
+          this.$router.push("/user_games");
       })
       .catch((error) => {
             this.errors = error.response.data.errors;
