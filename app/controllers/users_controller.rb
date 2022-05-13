@@ -34,6 +34,8 @@ end
 
 
 
+
+
 def update
   @user = User.find_by(id: params[:id])
   @user.email = params[:email] || @user.email

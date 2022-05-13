@@ -58,3 +58,11 @@ GET http://localhost:3000/user_games/2
 
 ###
 POST http://localhost:3000/user_games.json
+
+
+
+###
+GET http://localhost:3000/score
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNjUyNTQ5NTcxfQ.Lon6JBOt_euDt-oITAvpG4AM1-_M5vMVSW6v119XlMI
+Content-Type: application/json
+
