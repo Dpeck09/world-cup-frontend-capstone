@@ -15,22 +15,7 @@ class UserGamesController < ApplicationController
 
 
   def score
-    user = User.find_by(id: current_user.id)
-    winners = []
-      user.games.each do |game|
-        winners << game.winner
-      end
-      i = 0 
-      points = 0
-
-      user.user_games.each do |game|
-        if game.user_pick == winners[i]
-          points += 4
-          game.points_awarded = 4
-        end
-        i += 1
-      end
-      render json: points.as_json
+    
   end
 
 
