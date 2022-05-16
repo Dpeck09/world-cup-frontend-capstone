@@ -30,12 +30,16 @@
  
  <p v-for="guess in user.user_games">{{ guess.user_pick }}</p>
 
-
+<p> {{ user.point_total}} </p>
     
-    <router-link to="/users">Back to all users</router-link>
+    <router-link to="/">Back to all users</router-link>
   </div>
 
 
 
 
  </template>
+
+ <style>
+ 
+ </style>

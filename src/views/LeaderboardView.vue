@@ -32,7 +32,8 @@
   <div class="users-index">
 
   <p v-for="user in users">
-    {{ user.username }}
+    <u><h3>{{ user.username }}</h3></u>
+    points: {{ user.point_total }}
   </p>
 
 
@@ -42,11 +43,11 @@
    
  <p v-for="user_game in user_games"><hr>{{ user_games.user_pick }}</p>
 
+
  </div>
 
 
     
-  <router-link to="/users">Back to all users</router-link>
   
 
 
