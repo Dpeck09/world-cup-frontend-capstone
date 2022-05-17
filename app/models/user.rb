@@ -40,4 +40,6 @@ class User < ApplicationRecord
     self.update(point_total: sum)
   end
 
+
+
 end

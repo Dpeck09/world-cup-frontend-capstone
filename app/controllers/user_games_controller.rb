@@ -20,7 +20,7 @@ class UserGamesController < ApplicationController
 
 
   def create
-    8.times do |game_number|
+    15.times do |game_number|
       @user_games = UserGame.new(
         game_number: params[:user_games][game_number]["game_number"], 
         user_pick: params[:user_games][game_number]["user_selection"], 
@@ -29,6 +29,7 @@ class UserGamesController < ApplicationController
       )
       @user_games.save!
     end
+    current_user.calculate_score
   end
 
   # user_games = UserGame.new(

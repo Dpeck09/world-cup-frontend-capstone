@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
  def index
   @user = User.all
+  @user = @user.order(point_total: :desc)
   render json: @user.as_json
  end
 
