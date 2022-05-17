@@ -27,6 +27,17 @@ export default {
       .catch((error) => {
             this.errors = error.response.data.errors;
       });
+    },
+    prefill: function (game) {
+      console.log(game)
+      let obj = this.games.find(the_game => the_game.game_number === game.next_round);
+      console.log(obj)
+      if(obj.home) {
+        obj.away = game.user_selection
+      } else {
+        obj.home = game.user_selection
+      }
+      console.log(obj)
     }
   },
 };
@@ -37,9 +48,10 @@ export default {
     <h1>All Games</h1>
     <div v-for="game in games" v-bind:key="game.id">
       <p>Match {{ game.game_number }}</p>
+      <p>Next Game {{ game.next_round }}</p>
       <h4> {{ game.home }} VS {{ game.away }}</h4> 
       {{ game.user_selection }}
-      <select v-model="game.user_selection">
+      <select v-model="game.user_selection" v-on:change="prefill(game)">
       <option selected><h4>{{ game.home }}</h4></option>
       <option><h4>{{ game.away }}</h4></option>
       </select>

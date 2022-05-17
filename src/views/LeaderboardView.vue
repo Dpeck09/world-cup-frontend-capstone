@@ -33,7 +33,7 @@
 
   <p v-for="user in users">
     <u><h3>{{ user.username }}</h3></u>
-    points: {{ user.point_total }}
+    points: {{ user.point_total }} 
   </p>
 
 
