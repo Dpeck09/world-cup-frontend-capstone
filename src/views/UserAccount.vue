@@ -32,7 +32,7 @@
 
 <p> {{ user.point_total}} </p>
     
-    <router-link to="/">Back to all users</router-link>
+    <router-link to="/Login">Login</router-link>
   </div>
 
 

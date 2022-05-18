@@ -4,7 +4,7 @@
     |
     <router-link to="/Guess">Create Bracket</router-link>
     |
-    <router-link to="/">Leaderboard</router-link>
+    <router-link to="/Leaderboard">Leaderboard</router-link>
 
   </nav>
   <router-view/>
@@ -31,4 +31,9 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
+
 </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">

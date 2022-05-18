@@ -9,7 +9,7 @@ import Test from '../views/Test.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/Leaderboard',
     name: 'Leaderboard',
     component: LeaderboardView
   },
@@ -22,6 +22,7 @@ const routes = [
     path: '/Login',
     name: 'Login',
     component: Login,
+    
   },
   {
     path: '/Logout',
