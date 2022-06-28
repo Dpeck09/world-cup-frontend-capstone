@@ -2,6 +2,10 @@
   "name": "frontend-world-cup-capstone",
   "version": "0.1.0",
   "private": true,
+  "description": "a really cool app",
+ "engines": {
+   "node": "12.11.1"
+   }
   "scripts": {
     "serve": "vue-cli-service serve",
     "start": "node index.js",
@@ -24,5 +28,6 @@
     "vue": "^2.6.11",
     "vue-loader": "^15.5.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+ 
 }
