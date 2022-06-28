@@ -1,3 +1,5 @@
+var PORT = process.env.PORT || 5000;
+
 import { createRouter, createWebHistory } from 'vue-router'
 import LeaderboardView from '../views/LeaderboardView.vue'
 import SignUp from '../views/SignUp.vue'
