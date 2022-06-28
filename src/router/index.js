@@ -1,4 +1,6 @@
 var PORT = process.env.PORT || 5000;
+var express = require('express');
+var app = express();
 
 import { createRouter, createWebHistory } from 'vue-router'
 import LeaderboardView from '../views/LeaderboardView.vue'
