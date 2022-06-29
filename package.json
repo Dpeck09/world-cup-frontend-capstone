@@ -4,7 +4,7 @@
   "private": true,
   "description": "a really cool app",
   "engines": {
-    "node": "15.x"
+    "node": "18.0"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
