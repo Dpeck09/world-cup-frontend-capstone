@@ -9,7 +9,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "start": "node index.js",
-    "build": "vue-cli-service build"
+    "build": "webpack",
+    "heroku-postbuild": "ng build --prod",
+    "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
+    "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
+    "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies." 
   },
   "dependencies": {
     "axios": "^0.26.1",
