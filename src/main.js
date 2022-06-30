@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:5000" : "/";
+axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "https://worldcup-backend.herokuapp.com" : "/";
 
  var jwt = localStorage.getItem("jwt");
  if (jwt) {
